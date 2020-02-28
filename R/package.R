@@ -1,7 +1,7 @@
 # this R file is just here to produce a package-level helpfile for people to
 # look at when they get started
 
-#' @title What the Package Does (One Line, Title Case)
+#' @title Perform Standard Model Checks
 #' @name greta.checks
 #' 
 #' @description describe your package here, you can re-use the text from DESCRIPTION
