@@ -2,7 +2,7 @@
 # look at when they get started
 
 #' @title What the Package Does (One Line, Title Case)
-#' @name greta.template
+#' @name greta.checks
 #' 
 #' @description describe your package here, you can re-use the text from DESCRIPTION
 #' 
