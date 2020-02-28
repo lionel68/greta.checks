@@ -1,0 +1,7 @@
+^\.travis\.yml$
+^README\.Rmd$
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^codecov\.yml$
+^CODE_OF_CONDUCT\.md$
