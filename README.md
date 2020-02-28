@@ -8,7 +8,7 @@
 <!-- once you've signed into travis and set it to wath your new repository, you can edit the following badges to point to your repo -->
 
 [![Build
-Status](https://travis-ci.org/greta-dev/greta.template.svg?branch=master)](https://travis-ci.org/goldingn/greta.template)
+Status](https://travis-ci.org/lionel68/greta.checks.svg?branch=master)](https://travis-ci.org/lionel68/greta.checks)
 [![Codecov test
 coverage](https://codecov.io/gh/greta-dev/greta.template/branch/master/graph/badge.svg)](https://codecov.io/gh/greta-dev/greta.template?branch=master)
 <!-- badges: end -->
