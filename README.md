@@ -43,7 +43,7 @@ inspiration or text to copy and adapt\!
 
   - [ ] Pick a package name (preferably with ‘greta.’ at the beginning).
     Update the package name in:
-      - [x ] the ‘Package’ field in `DESCRIPTION`
+      - [ ] the ‘Package’ field in `DESCRIPTION`
       - [ ] the `library()` and `test_check()` calls in
         `tests/testthat.R`
       - [ ] in the `@name` documentation field in `R/package.R`
