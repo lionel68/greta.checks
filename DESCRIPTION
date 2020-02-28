@@ -1,18 +1,18 @@
-Package: greta.template
-Title: What the Package Does (One Line, Title Case)
+Package: greta.checks
+Title: Perform Checks on greta Models
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Lionel",
+           family = "Hertzog",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "lionel.hertzog@ugent.be",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package provide a set of functions to perform standard model checks on fitted greta models. 
 License: CC0
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/your_username/your_repository
-BugReports: https://github.com/your_username/your_repository/issues
+URL: https://github.com/lionel68/greta.checks
+BugReports: https://github.com/lionel68/greta.checks/issues
 Suggests: 
     testthat (>= 2.1.0),
     covr,
