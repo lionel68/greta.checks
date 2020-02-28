@@ -10,7 +10,7 @@
 [![Build
 Status](https://travis-ci.org/lionel68/greta.checks.svg?branch=master)](https://travis-ci.org/lionel68/greta.checks)
 [![Codecov test
-coverage](https://codecov.io/gh/greta-dev/greta.template/branch/master/graph/badge.svg)](https://codecov.io/gh/greta-dev/greta.template?branch=master)
+coverage](https://codecov.io/gh/lionel68/greta.checks/branch/master/graph/badge.svg)](https://codecov.io/gh/lionel68/greta.checks?branch=master)
 <!-- badges: end -->
 
 This is an empty repository to help you build an extension to greta.
