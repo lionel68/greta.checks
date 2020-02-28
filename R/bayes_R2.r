@@ -2,7 +2,9 @@
 
 # pull out the necessary internal functions from greta
 op <- .internals$nodes$constructors$op
-
+#' @import stats
+#' @import greta
+#' 
 #' @title compute the Bayesian R square for a greta regression model
 #' @export
 #' 

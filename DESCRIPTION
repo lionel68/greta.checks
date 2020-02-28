@@ -18,6 +18,8 @@ Suggests:
     covr,
     spelling
 Imports: 
+    stats,
+    greta,
     tensorflow (>= 1.13.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
