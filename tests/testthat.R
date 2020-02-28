@@ -1,3 +1,3 @@
 library(testthat)
-library(greta.template)
-test_check("greta.template")
+library(greta.checks)
+test_check("greta.checks")
