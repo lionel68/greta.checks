@@ -1,7 +1,9 @@
-test_that("bayes_R2 gives correct format", {
+test_that("bayes_R2 gives correct answer", {
   
   check_tf_version <- greta::.internals$utils$misc$check_tf_version
   skip_if_not(check_tf_version())
+  
+  set.seed(1234)
   
   intercept <- normal(0, 1)
   slope <- normal(0, 1)
@@ -14,7 +16,10 @@ test_that("bayes_R2 gives correct format", {
   m <- model(intercept, slope, sd_resid)
   drr <- mcmc(m, warmup = 10, n_samples = 10)
 
+  # results 
+  r2 <- bayes_R2(y, pred, drr)
+  
   # compare
-  expect_is(class(bayes_R2(y, pred, drr)), "matrix")
+  expect_equal(round(r2[,1], 2), 0.02)
   
 })

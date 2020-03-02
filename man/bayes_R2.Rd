@@ -14,7 +14,7 @@
 
 \item{draws}{a mcmc.list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)}
 
-\item{summary}{a logical, if TRUE (default) the function output summary statistics (mean, sd, 80% credible intervals) for the R2, if FALSE the raw values are returned}
+\item{summary}{a logical, if TRUE (default) the function output summary statistics (mean, sd, 80\% credible intervals) for the R2, if FALSE the raw values are returned}
 
 \item{probs}{a vector of two numeric specifying the lower and upper limits for the credible intervals (default to 0.1, 0.9), only used if summary=TRUE}
 }
@@ -28,6 +28,7 @@ Compute a Bayesian version of R-square for regression models (GLMs ...)
 See https://github.com/jgabry/bayes_R2/blob/master/bayes_R2.pdf for a description of the computation. Note that R2 only univariate models are supported. This function is largely inspired from brms::bayes_R2.
 }
 \examples{
+\dontrun{
 intercept <- normal(0, 1)
 slope <- normal(0, 1)
 sd_resid <- cauchy(0, 1, truncation = c(0, 100))
@@ -40,4 +41,5 @@ m <- model(intercept, slope, sd_resid)
 drr <- mcmc(m)
 
 bayes_R2(y, pred, drr)
+}
 }
