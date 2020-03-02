@@ -17,7 +17,7 @@ This package provides a set a function to perform classical model checks on mode
 
 ## Installation
 
-After istalling ```devtools``` in R run the following to install greta.checks:
+After installing ```devtools``` in R run the following to install greta.checks:
 
 ```
 library(devtools)
