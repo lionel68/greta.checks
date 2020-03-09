@@ -16,10 +16,10 @@ BugReports: https://github.com/lionel68/greta.checks/issues
 Suggests: 
     testthat (>= 2.1.0),
     covr,
+    abind,
     spelling
 Imports: 
     stats,
-    greta,
     tensorflow (>= 1.13.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
