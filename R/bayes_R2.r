@@ -47,7 +47,7 @@ bayes_R2 <- function(y, pred, draws, summary = TRUE, probs = c(0.1, 0.9)){
   ## to dev
   
   # get the posterior draws for the linear predictor
-  ypred <- calculate(pred, draws)
+  ypred <- calculate(taregt = pred, values = draws)
   
   # posterior residuals
   e <- -1 * sweep(as.matrix(ypred), 2, as.matrix(y))
