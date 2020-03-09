@@ -21,8 +21,8 @@ Suggests:
 Imports: 
     stats,
     tensorflow (>= 1.13.0)
+Depends:
+    greta (>= 0.3.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
-Depends: 
-    greta (>= 0.3.0)
 Language: en-GB
