@@ -1,4 +1,4 @@
-test_that("pp_check.greta_mcmc_list return a ggplot object", {
+test_that("simulate_residuals return an object of class DHARMa", {
   
   check_tf_version <- greta::.internals$utils$misc$check_tf_version
   skip_if_not(check_tf_version())
@@ -19,10 +19,7 @@ test_that("pp_check.greta_mcmc_list return a ggplot object", {
   m <- model(intercept, slope, sd_resid)
   draws <- mcmc(m, warmup = 10, n_samples = 10)
   
-  expect_s3_class(pp_check(draws, y), "gg")
-  
-  expect_error(pp_check(draws, y, type = "loo_pit"), "LOO ppc function are not supported", fixed = TRUE)
-  
-  expect_error(pp_check(draws, y, type = "bars"), "Discrete ppc function not supported", fixed = TRUE)
+  # results 
+  expect_s3_class(simulate_residual(draws, y, linpred), "DHARMa")
   
 })
