@@ -68,5 +68,5 @@ pp_check.greta_mcmc_list <- function(object, y, nsim = 10, type = "dens_overlay"
   ppc_fun <- get(paste0("ppc_", type), asNamespace("bayesplot"))
   
   # call the function
-  ppc_fun(y_vec, yrep)
+  ppc_fun(y_vec, yrep, ...)
 }
