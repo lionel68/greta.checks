@@ -25,5 +25,31 @@ A ggplot object that can be further modified using the \pkg{ggplot2} package.
 Perform posterior predictive checks with the help of the package \code{bayesplot}
 }
 \details{
-For a detailed explanation of each of the implemented ppc functions, see \code{\link[bayesplot:PPC-overview]{PPC-overview}}. Note that LOO and Discrete ppc_* function are not yet available for greta models.
+For a detailed explanation of each of the implemented ppc functions, see \code{\link[bayesplot:PPC-overview]{PPC-overview}}.
+Note that LOO and Discrete ppc_* function are not yet available for greta models.
+}
+\examples{
+\dontrun{
+x <- runif(100, -2, 2)
+y <- rnorm(100, 1 + 2 * x, 1)
+# need the pass the response vector as greta array
+y <- as_data(y)
+
+intercept <- normal(0, 2)
+slope <- normal(0, 1)
+linpred <- intercept + slope * x
+sd_res <- cauchy(0, 2, truncation = c(0, Inf))
+
+distribution(y) <- normal(linpred, sd_res)
+m <- model(intercept, slope, sd_res)
+d <- mcmc(m, warmup = 10, n_samples = 10)
+
+# default use
+pp_check(d, y)
+# check some options
+pp_check(d, y, nsim = 4, type = "scatter_avg")
+pp_check(d, y, type = "hist")
+pp_check(d, y, type = "error_scatter") 
+}
+
 }

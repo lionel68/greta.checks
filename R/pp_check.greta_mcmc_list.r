@@ -18,9 +18,10 @@ op <- .internals$nodes$constructors$op
 #' 
 #' @return A ggplot object that can be further modified using the \pkg{ggplot2} package.
 #' 
-#' @details For a detailed explanation of each of the implemented ppc functions, see \code{\link[bayesplot:PPC-overview]{PPC-overview}}. Note that LOO and Discrete ppc_* function are not yet available for greta models.
+#' @details For a detailed explanation of each of the implemented ppc functions, see \code{\link[bayesplot:PPC-overview]{PPC-overview}}. 
+#' Note that LOO and Discrete ppc_* function are not yet available for greta models.
 #'
-#' @example 
+#' @examples 
 #' \dontrun{
 #' x <- runif(100, -2, 2)
 #' y <- rnorm(100, 1 + 2 * x, 1)
@@ -34,14 +35,14 @@ op <- .internals$nodes$constructors$op
 #'
 #' distribution(y) <- normal(linpred, sd_res)
 #' m <- model(intercept, slope, sd_res)
-#' d <- mcmc(m)
+#' d <- mcmc(m, warmup = 10, n_samples = 10)
 #' 
 #' # default use
 #' pp_check(d, y)
 #' # check some options
 #' pp_check(d, y, nsim = 4, type = "scatter_avg")
-#' pp_check(d, y, type = "hist)
-#' pp_check(d, y, type = "error_scatter")
+#' pp_check(d, y, type = "hist")
+#' pp_check(d, y, type = "error_scatter") 
 #' }
 #'
 #' @importFrom bayesplot pp_check
