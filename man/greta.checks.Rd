@@ -3,7 +3,6 @@
 \docType{package}
 \name{greta.checks}
 \alias{greta.checks}
-\alias{greta.checks-package}
 \title{Perform Standard Model Checks}
 \description{
 describe your package here, you can re-use the text from DESCRIPTION

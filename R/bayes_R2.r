@@ -16,7 +16,7 @@ op <- .internals$nodes$constructors$op
 #' @param y a greta array, the response variables
 #' @param pred a greta array, the linear predictor
 #' @param draws a mcmc.list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)
-#' @param summary a logical, if TRUE (default) the function output summary statistics (mean, sd, 80\% credible intervals) for the R2, if FALSE the raw values are returned
+#' @param summary a logical, if TRUE (default) the function output summary statistics (mean, sd, 80% credible intervals) for the R2, if FALSE the raw values are returned
 #' @param probs a vector of two numeric specifying the lower and upper limits for the credible intervals (default to 0.1, 0.9), only used if summary=TRUE
 #'
 #' @return If summary=TRUE a 1 x C matrix is returned (C = length(probs) + 2) containing summary statistics of Bayesian R-squared values. If summary = FALSE the posterior samples of the R-squared values are returned as a numeric vector of length S (S is the number of samples)
@@ -47,7 +47,7 @@ bayes_R2 <- function(y, pred, draws, summary = TRUE, probs = c(0.1, 0.9)){
   ## to dev
   
   # get the posterior draws for the linear predictor
-  ypred <- calculate(taregt = pred, values = draws)
+  ypred <- calculate(pred, values = draws)
   
   # posterior residuals
   e <- -1 * sweep(as.matrix(ypred), 2, as.matrix(y))

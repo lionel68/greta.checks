@@ -20,9 +20,10 @@ Suggests:
     spelling
 Imports: 
     stats,
-    tensorflow (>= 1.13.0)
+    tensorflow (>= 1.13.0),
+    bayesplot (>= 1.5.0)
 Depends:
     greta (>= 0.3.0)
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Language: en-GB
