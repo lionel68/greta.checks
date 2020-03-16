@@ -10,8 +10,6 @@ op <- .internals$nodes$constructors$op
 #' 
 #' @description Perform posterior predictive checks with the help of the package \code{bayesplot}
 #'
-#' @usage ## S3 method for class 'greta_mcmc_list'
-#' pp_check(object, y, nsim = 10, type = "dens_overlay", ...)
 #'
 #' @param object A greta_mcmc_list object obtained from the greta::mcmc function
 #' @param y A greta array of the response variable, see example
