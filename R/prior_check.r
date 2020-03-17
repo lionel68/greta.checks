@@ -13,11 +13,13 @@ op <- .internals$nodes$constructors$op
 #' @param probs A vector of two numeric, the lower and upper bound of the predictive interval
 #' @param nsim A numeric, the number of simulation draws, default is 100
 #' 
-#' @return A character string of the form: XX\% of the nsim simulated response from the prior distributions had a fun value between XX and XX.
+#' @return A character string of the form: XX of the nsim simulated response from the prior distributions had a fun value between XX and XX.
 #' 
 #' @details Prior predictive checks allow a better tuning of the prior distribution of the model parameters by checking simulated new draws of the response. For instance, if we want to model the speed of migratory birds, we do not expect the maximum value of simulated draws from the priors to be beyond 100 of km/h.
 #' 
 #' @usage prior_check(y, fun = "mean", probs = c(0.1, 0.9), nsim = 100)
+#' 
+#' @export
 #' 
 #' @examples 
 #' \dontrun{
@@ -33,12 +35,12 @@ op <- .internals$nodes$constructors$op
 #' prior_check(y)
 #' 
 #' # can also use custom function, like counting number 
-#' of zero observations to check for zero-inflation
+#' # of zero observations to check for zero-inflation
 #' count0 <- function(x){
 #' sum(x==0)
 #' }
 #' 
-#' a poisson regression
+#' # a poisson regression
 #' intercept <- normal(0, 1)
 #' slope <- normal(0, 1)
 #' x <- runif(100)

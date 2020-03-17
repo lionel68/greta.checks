@@ -16,7 +16,7 @@ prior_check(y, fun = "mean", probs = c(0.1, 0.9), nsim = 100)
 \item{nsim}{A numeric, the number of simulation draws, default is 100}
 }
 \value{
-A character string of the form: XX\\% of the nsim simulated response from the prior distributions had a fun value between XX and XX.
+A character string of the form: XX of the nsim simulated response from the prior distributions had a fun value between XX and XX.
 }
 \description{
 Perform prior predictive checks on a greta model object
@@ -38,12 +38,12 @@ distribution(y) <- normal(linpred, sd_resid)
 prior_check(y)
 
 # can also use custom function, like counting number 
-of zero observations to check for zero-inflation
+# of zero observations to check for zero-inflation
 count0 <- function(x){
 sum(x==0)
 }
 
-a poisson regression
+# a poisson regression
 intercept <- normal(0, 1)
 slope <- normal(0, 1)
 x <- runif(100)

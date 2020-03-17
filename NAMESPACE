@@ -3,6 +3,7 @@
 S3method(pp_check,greta_mcmc_list)
 export(bayes_R2)
 export(pp_check)
+export(prior_check)
 export(simulate_residual)
 import(greta)
 importFrom(DHARMa,createDHARMa)
