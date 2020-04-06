@@ -12,7 +12,7 @@
 
 \item{pred}{a greta array, the linear predictor}
 
-\item{draws}{a mcmc.list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)}
+\item{draws}{a greta_mcmc_list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)}
 
 \item{summary}{a logical, if TRUE (default) the function output summary statistics (mean, sd, 80\% credible intervals) for the R2, if FALSE the raw values are returned}
 
@@ -37,6 +37,8 @@ x <- runif(100)
 y <- as_data(rnorm(100, 1 + 2 * x, 1))
 
 pred <- intercept + slope * x
+distribution(y) <- normal(pred, sd_resid)
+
 m <- model(intercept, slope, sd_resid)
 drr <- mcmc(m)
 

@@ -15,7 +15,7 @@ op <- .internals$nodes$constructors$op
 #' 
 #' @param y a greta array, the response variables
 #' @param pred a greta array, the linear predictor
-#' @param draws a mcmc.list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)
+#' @param draws a greta_mcmc_list, posterior draws as returned from calling greta sampling algorithm (ie mcmc)
 #' @param summary a logical, if TRUE (default) the function output summary statistics (mean, sd, 80% credible intervals) for the R2, if FALSE the raw values are returned
 #' @param probs a vector of two numeric specifying the lower and upper limits for the credible intervals (default to 0.1, 0.9), only used if summary=TRUE
 #'
@@ -34,6 +34,8 @@ op <- .internals$nodes$constructors$op
 #' y <- as_data(rnorm(100, 1 + 2 * x, 1))
 #' 
 #' pred <- intercept + slope * x
+#' distribution(y) <- normal(pred, sd_resid)
+#' 
 #' m <- model(intercept, slope, sd_resid)
 #' drr <- mcmc(m)
 #' 
