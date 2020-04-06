@@ -61,7 +61,7 @@ prior_check <- function(y, fun = "mean",
   # summarize prior distribution of response
   sum_prior <- apply(sims[[1]], 1, sum_fun)
   # get the quantiles
-  qq <- quantile(sum_prior, probs = probs)
+  qq <- quantile(sum_prior, probs = probs, na.rm = TRUE)
   # quantile range
   r_qq <- (probs[2] - probs[1]) * 100
   # output
