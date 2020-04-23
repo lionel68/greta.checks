@@ -17,7 +17,7 @@ op <- .internals$nodes$constructors$op
 #'
 #' @return If summary=TRUE a 1 x C matrix is returned (C = length(probs) + 2) containing summary statistics of Bayesian R-squared values. If summary = FALSE the posterior samples of the R-squared values are returned as a numeric vector of length S (S is the number of samples)
 #'
-#' @details 
+#' @details Note that when normalized RMSE (norm=TRUE), is compute as follow: nRMSE = RMSE / mean(y)
 #' 
 #' @examples
 #' \dontrun{

@@ -26,7 +26,7 @@ If summary=TRUE a 1 x C matrix is returned (C = length(probs) + 2) containing su
 Compute the root mean squared error of a greta model
 }
 \details{
-
+Note that when normalized RMSE (norm=TRUE), is compute as follow: nRMSE = RMSE / mean(y)
 }
 \examples{
 \dontrun{

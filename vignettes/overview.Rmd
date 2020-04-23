@@ -1,0 +1,10 @@
+---
+title: "greta.checks: Model checking utilities for greta models"
+output: rmarkdown::html_vignette
+vignette: >
+ %\VignetteIndexEntry{overview}
+ %\VignetteEngine{knitr::rmarkdown}
+ \usepackage[utf8]{inputenc}
+---
+
+ooo
