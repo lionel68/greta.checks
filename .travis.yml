@@ -4,6 +4,10 @@ language: r
 warnings_are_errors: false
 dist: trusty
 
+before_install:
+  - sudo apt-get install glpk-utils libglpk-dev
+
+
 r_packages:
   - testthat
   - covr
