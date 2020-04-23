@@ -21,7 +21,7 @@ test_that("rmse works as it should", {
   
   # results 
   expect_error(rmse(y, linpred, drr), NA)
-  
+  expect_error(rmse(y, linpred, drr, norm = TRUE), NA)
   # compare
   #expect_equal(round(r2[,1], 2), 0.02)
   

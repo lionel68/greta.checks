@@ -2,9 +2,9 @@
 % Please edit documentation in R/rmse.r
 \name{rmse}
 \alias{rmse}
-\title{compute the Root mean squared error for a greta regression model}
+\title{compute the (normalized) root mean squared error for a greta regression model}
 \usage{
-rmse(y, pred, draws, summary = TRUE, probs = c(0.1, 0.9))
+rmse(y, pred, draws, summary = TRUE, probs = c(0.1, 0.9), norm = FALSE)
 }
 \arguments{
 \item{y}{a greta array, the response variables}
@@ -16,6 +16,8 @@ rmse(y, pred, draws, summary = TRUE, probs = c(0.1, 0.9))
 \item{summary}{a logical, if TRUE (default) the function output summary statistics (mean, sd, 80\% credible intervals) for the R2, if FALSE the raw values are returned}
 
 \item{probs}{a vector of two numeric specifying the lower and upper limits for the credible intervals (default to 0.1, 0.9), only used if summary=TRUE}
+
+\item{norm}{a logical, whether to normalize the RMSE by the mean of the response variable}
 }
 \value{
 If summary=TRUE a 1 x C matrix is returned (C = length(probs) + 2) containing summary statistics of Bayesian R-squared values. If summary = FALSE the posterior samples of the R-squared values are returned as a numeric vector of length S (S is the number of samples)
