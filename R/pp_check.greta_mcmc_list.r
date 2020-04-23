@@ -48,7 +48,7 @@ op <- .internals$nodes$constructors$op
 #'
 #' @importFrom bayesplot pp_check
 #' @export pp_check
-
+#' @export
 
 
 pp_check.greta_mcmc_list <- function(object, y, nsim = 10, type = "dens_overlay", ...){
