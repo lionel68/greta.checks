@@ -4,12 +4,11 @@ language: r
 warnings_are_errors: false
 dist: trusty
 
-# some addons to work with DHARMa
+# some addons to work with DHARMa, see https://github.com/florianhartig/DHARMa/issues/166
 addons:
   apt:
     packages:
       - libglpk-dev
-      - libnlopt-dev
 
 r_packages:
   - testthat
