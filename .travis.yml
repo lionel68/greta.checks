@@ -4,9 +4,12 @@ language: r
 warnings_are_errors: false
 dist: trusty
 
-before_install:
-  - sudo apt-get install glpk-utils libglpk-dev
-
+# some addons to work with DHARMa
+addons:
+  apt:
+    packages:
+      - libglpk-dev
+      - libnlopt-dev
 
 r_packages:
   - testthat
