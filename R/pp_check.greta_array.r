@@ -26,6 +26,7 @@ op <- .internals$nodes$constructors$op
 #' }
 #'
 #' @importFrom bayesplot ppc_dens_overlay
+#' @import ggplot2
 #' @export ppc_dens_overlay
 #' @export
 
