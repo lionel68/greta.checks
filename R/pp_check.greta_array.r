@@ -34,7 +34,7 @@ pp_check.greta_array <- function(y,
                                  ndraw = 10,
                                  ...){
   # draw prior distributions
-  sims <- replicate(n_realisations, calculate(y, nsim = nsim)[[1]][, , 1])
+  sims <- replicate(ndraw, calculate(y, nsim = nsim)[[1]][, , 1])
 
   # call the function
   # retrive data and attributes from the ggplot object
