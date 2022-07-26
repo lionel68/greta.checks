@@ -1,6 +1,6 @@
 test_that("pp_check.greta_mcmc_list return a ggplot object", {
   
-  check_tf_version <- greta::.internals$utils$misc$check_tf_version
+  check_tf_version <- greta::.internals$checks$check_tf_version
   skip_if_not(check_tf_version())
   
   set.seed(1234)
