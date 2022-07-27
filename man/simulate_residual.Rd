@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulate_residual.r
 \name{simulate_residual}
 \alias{simulate_residual}
-\title{Convert a \code{greta_mcmc_list} to a \code{DHARMa} obect}
+\title{Convert a \code{greta_mcmc_list} to a \code{DHARMa} object}
 \usage{
 simulate_residual(object, y, linpred, nsim = 10, integerResponse = FALSE)
 }

@@ -1,6 +1,6 @@
 Package: greta.checks
-Title: Perform Checks on greta Models
-Version: 0.0.0.9000
+Title: Perform Checks on greta Models and Arrays
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Lionel",
            family = "Hertzog",
@@ -24,10 +24,11 @@ Imports:
     stats,
     tensorflow (>= 1.13.0),
     bayesplot (>= 1.5.0),
+    ggplot2,
     DHARMa
 Depends:
-    greta (>= 0.3.0)
+    greta (>= 0.4.2)
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.1
 Language: en-GB
 VignetteBuilder: knitr

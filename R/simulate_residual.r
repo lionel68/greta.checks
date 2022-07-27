@@ -3,8 +3,7 @@ op <- .internals$nodes$constructors$op
 
 #' @import greta
 #'
-#' @title Convert a \code{greta_mcmc_list} to a \code{DHARMa} obect
-#'
+#' @title Convert a \code{greta_mcmc_list} to a \code{DHARMa} object
 #' 
 #' @description Create a \code{DHARMa} object from a fitted greta model.
 #'

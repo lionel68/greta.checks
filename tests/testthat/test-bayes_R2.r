@@ -1,6 +1,6 @@
 test_that("bayes_R2 works as it should", {
   
-  check_tf_version <- greta::.internals$utils$misc$check_tf_version
+  check_tf_version <- greta::.internals$checks$check_tf_version
   skip_if_not(check_tf_version())
   
   set.seed(1234)
