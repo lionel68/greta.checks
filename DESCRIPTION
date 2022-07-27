@@ -1,6 +1,6 @@
 Package: greta.checks
-Title: Perform Checks on greta Models
-Version: 0.0.0.9000
+Title: Perform Checks on greta Models and Arrays
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Lionel",
            family = "Hertzog",
